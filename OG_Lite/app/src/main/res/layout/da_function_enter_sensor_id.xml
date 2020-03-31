@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/enter_sensor_id_corners">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Enter sensor ID number"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textView32"
+            android:layout_alignStart="@id/textView32"
+            android:layout_alignEnd="@id/textView32"
+            android:background="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/enter_sensor_id_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView33"
+            android:layout_alignStart="@id/textView32"
+            android:layout_alignEnd="@id/textView32"
+            android:layout_marginBottom="-2dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag.Frag_Function_Check_Sensor_Location">
+
+    <TextView
+        android:id="@+id/mmy_text"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/buttoncolor"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="BMW / 1(F20,F21) / 2014~2015"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin"
+        android:layout_below="@id/mmy_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/condition"
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/Please_start_clockwise_from_the_left_front_wheel"
+                android:textSize="21sp" />
+
+            <RelativeLayout
+                android:id="@+id/Car_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:id="@+id/li"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Lft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/img_input_box_locked"
+                        android:gravity="center"
+                        android:hint="LF sensor ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Rft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/img_input_box_locked"
+                        android:gravity="center"
+                        android:hint="RF sensor ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/CAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/li">
+
+                    <TextView
+                        android:id="@+id/Lf"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_toStartOf="@id/pad"
+                        android:background="@mipmap/img_wheel_n"
+                        android:gravity="center"
+                        android:text="@string/app_fl"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:translationX="24dp" />
+
+                    <TextView
+                        android:id="@+id/Rf"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_toEndOf="@id/pad"
+                        android:background="@mipmap/img_wheel_n"
+                        android:gravity="center"
+                        android:text="@string/app_fr"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:translationX="-24dp" />
+
+                    <TextView
+                        android:id="@+id/pad"
+                        android:layout_width="132dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/img_car_four_tire" />
+
+                    <TextView
+                        android:id="@+id/Rr"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_below="@id/Rf"
+                        android:layout_toEndOf="@id/pad"
+                        android:background="@mipmap/img_wheel_n"
+                        android:gravity="center"
+                        android:text="@string/app_rr"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:translationX="-24dp"
+                        android:translationY="24dp" />
+
+                    <TextView
+                        android:id="@+id/Lr"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_below="@id/Lf"
+                        android:layout_toStartOf="@id/pad"
+                        android:background="@mipmap/img_wheel_n"
+                        android:gravity="center"
+                        android:text="LR"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:translationX="24dp"
+                        android:translationY="24dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/li3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/li2"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/Spt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.65"
+                        android:background="@mipmap/img_input_box_locked"
+                        android:gravity="center"
+                        android:hint="SP sensor ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CAR"
+                    android:layout_marginTop="10dp"
+                    android:elevation="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Lrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/img_input_box_locked"
+                        android:gravity="center"
+                        android:hint="LR sensor ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Rrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="14dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/img_input_box_locked"
+                        android:gravity="center"
+                        android:hint="RR sensor ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_rectangle"
+            android:text="@string/MENU"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/read_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_rectangle"
+            android:text="@string/app_sensor_info_read"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag.Frag_Function_Relearn_Procedure">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Read_MMY_Title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/title_black"
+        android:gravity="center"
+        android:text="MMY Titile"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <ScrollView
+        android:id="@+id/Scroll_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Read_ID_form_Vehice"
+        android:layout_below="@id/Read_MMY_Title">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="27dp"
+            android:text="TextView"
+            android:textSize="21sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Read_ID_form_Vehice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/btn_rectangle"
+        android:gravity="center"
+        android:text="@string/Next"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

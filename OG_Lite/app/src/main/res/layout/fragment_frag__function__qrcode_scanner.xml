@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qr_code_background_color"
+    tools:context=".Frag.Frag_Function_QrcodeScanner">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Scan_Title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/title_black"
+        android:gravity="center"
+        android:text="Scan MMY QR Code"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true">
+
+    </FrameLayout>
+
+</RelativeLayout>

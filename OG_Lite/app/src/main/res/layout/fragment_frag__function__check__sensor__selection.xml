@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag.Frag_Function_Check_Sensor_Selection">
+
+    <TextView
+        android:id="@+id/Read_MMY_Title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/title_black"
+        android:gravity="center"
+        android:text="@string/Methods_of_vehicle_data_selection"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SelectButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Read_MMY_Title">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

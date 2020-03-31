@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="307dp"
+            android:layout_height="146dp" android:layout_centerInParent="true"
+            android:background="@color/white">
+
+        <TextView
+                android:text="@string/Are_you_sure_you_want_to_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" android:id="@+id/textView13" android:layout_below="@id/textView16"
+                android:gravity="center" android:layout_marginTop="10dp" android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black" android:textSize="16sp"/>
+        <TextView
+                android:text="@string/Log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView16" android:gravity="center"
+                android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" android:textSize="18sp" android:textColor="@android:color/black"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp" app:srcCompat="@android:color/darker_gray"
+                android:id="@+id/back" android:layout_above="@id/re"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_alignParentBottom="true" android:id="@+id/re">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@android:color/black" />
+            <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" app:srcCompat="@android:color/darker_gray"
+                    android:id="@+id/imageView14"/>
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Yes"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

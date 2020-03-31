@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Frag.Frag_Function_Selection">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/title_black"
+        android:gravity="center"
+        android:text="@string/Methods_of_vehicle_data_selection"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SelectButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_above="@id/imageView8"
+        android:layout_below="@id/textView18">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/btn_rectangle"
+        android:gravity="center"
+        android:text="@string/MENU"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</RelativeLayout>

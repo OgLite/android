@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag.Frag_SelectMmyPage_Make">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/Select_Make_Title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/title_black"
+        android:gravity="center"
+        android:text="@string/Select_CAR_Make"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Select_Make_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Select_Make_Title" />
+
+</RelativeLayout>
